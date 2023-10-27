@@ -1,0 +1,370 @@
+
+body{
+    background-color: #000000;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+
+    
+}
+.titulo{
+    text-align: center;
+    color:rgb(255, 255, 255);
+}
+.card{
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    width: auto;
+    padding-top: auto;
+    padding-left: auto;
+    position: relative;
+    align-items: center;
+    
+}
+.card-img-top{
+    height: auto;
+    width:  auto;
+}
+
+/*inicio parallax*/
+section.module.parallax-1, parallax-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+
+}
+
+section.module.parallax-1:after{
+    content:"" ;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background:-moz-linear-gradient(to bottom, rgba(0,0,0,0)0,rgba(0,0,0,0) 40%, #000 100%);
+    background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0)0,rgba(0,0,0,0) 40%, #000 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0)0,rgba(0,0,0,0) 40%, #000 100%);
+}
+
+
+
+
+section.module.parallax-1{
+    background-image:url(https://img.elo7.com.br/product/zoom/3CE5D37/painel-adesivo-saudavel-peso-musculacao-treino-academia-adesivo-decorativo-parede.jpg) ;
+}
+
+
+section.module.parallax-1 h1{
+    color: #fff;
+    text-align: center;
+    font-size: 78px;
+    z-index: 50;
+    text-transform:uppercase ;
+
+}
+section.module.parallax-1 h2{
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    z-index: 50;
+    text-transform:uppercase ;
+
+}
+/*final parallax*/
+/*nav bar*/
+.botton{
+    width: auto;
+    height: auto;
+    align-items: center;
+}
+.col{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 2px;
+    align-items: center;
+    color: #f4f1f1;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 25px;
+    align-items: center;
+    color: white;
+}
+
+.nav-itens {
+    list-style: none;
+    display: flex;
+}
+
+.nav-itens>li>a {
+    padding-left: 20px;
+    color: #f0ebeb;
+    text-decoration: none;
+}
+
+.login {
+    padding: 10px 40px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    color: #000000;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.cadastro {
+    padding: 10px 40px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #202020;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: 1s background;
+}
+
+.cadastro:hover {
+    background-color: #3d3d3d;
+    transition: 1s background;
+}
+/* final do cadastro*/
+
+/*inicio dos preços*/
+.price-box {
+    border: 2px solid rgba(255, 255, 255, 0.911);
+    text-align: center;
+    padding: 30px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  .price-box.popular {
+    border: 2px solid #c3c3c3;
+  }
+  .popular-text {
+    top: 0;
+    left: 50%;
+    margin-left: -65px;
+    margin-top: -2em;
+    position: absolute;
+    padding: 4px 20px;
+    background: #ffffff;
+    color: #000000;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+  }
+  .popular-text:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-top: 10px solid rgb(26, 21, 21);
+    border-top-color: #e9e9e9;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+  }
+  .price-box hr {
+    border: 1px solid #ffffff;
+  }
+  .pricing-plan {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fffafa;
+  }
+  .price {
+    font-size: 50px;
+    color: #fff;
+  }
+  .price .currency {
+    font-size: 20px;
+    top: -1.2em;
+  }
+  .price small {
+    font-size: 16px;
+  }
+  .pricing-info {
+    color: #e9e9e9;
+    padding: 0;
+    margin: 0 0 0px 0;
+  }
+  .pricing-info li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+  }
+  .core-features {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    width: 100%;
+  }  
+.p{
+    color: #e9e9e9;
+}
+/*botoes*/
+.btn.btn-primary {
+    background: #8C7676;
+    color: #fff;
+    border: none !important;
+    border: 2px solid transparent !important;
+  }
+  .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
+  box-shadow: none;
+  background: #8C7676;
+}
+.btn:hover, .btn:active, .btn:focus {
+  background: #393e46 !important;
+  color: #fff;
+  outline: none !important;
+}
+.btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active {
+  border-color: transparent;
+}
+.a{
+  align-items: center;
+}
+.btn-treino{
+  text-align: center;
+}
+.subtext{
+  text-align: left; 
+
+}
+
+
+
+
+@media only screen and (min-width: 992px) and (max-width: 1180px) {
+	.footer-area h3{
+		font-size: 18px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.navbar-light .navbar-brand{
+		margin-left: 15px;
+	}
+	.navbar-light .navbar-toggler{
+		margin-right: 15px;
+		border-radius: 0px;
+	}
+	.navbar-expand-lg .navbar-nav .dropdown-menu{
+		box-shadow: none;
+	}
+	.carousel-control-prev{
+		left: -60px;
+	}
+	.carousel-control-next{
+		right: -60px;
+	}
+	.why-text h4{
+		font-size: 18px;
+	}
+	.why-text p{
+		margin: 0px;
+	}
+}
+@media (max-width: 767px) {
+	.navbar-light .navbar-brand{
+		margin-left: 15px;
+	}
+	.navbar-light .navbar-toggler{
+		margin-right: 15px;
+		border-radius: 0px;
+	}
+	.navbar-expand-lg .navbar-nav .dropdown-menu{
+		box-shadow: none;
+	}
+	.cover-slides h1{
+		font-size: 22px;
+	}
+	.cover-slides p {
+		font-size: 14px;
+	}
+	.slides-navigation a{
+		height: 42px;
+		width: 38px;
+		line-height: 33px;
+	}
+	.inner-column{
+		margin-top: 15px;
+	}
+	.inner-column h1{
+		font-size: 22px;
+	}
+	.filter-button-group{
+		margin: 10px 0px;
+	}
+	
+	.contact-imfo-box .col-md-4{
+		margin-bottom: 15px;
+	}
+	.carousel-control-prev{
+		left: 0px;
+	}
+	.carousel-control-next{
+		right: 0px;
+	}
+	.blog-box-inner .blog-detail{
+		overflow: hidden;
+	}
+	.blog-sidebar{
+		margin-top: 50px;
+	}
+	.top-navbar .navbar{
+		border-radius: 0px 0px 50px 50px;
+	}
+	
+}
+@media only screen and (min-width: 280px) and (max-width: 599px) {
+	
+	.why-text p{
+		margin-bottom: 0px;
+		margin-top: 0px;
+	}
+	.inner-column{
+		margin-bottom: 30px;
+	}
+	.inner-menu-box .nav-pills .nav-link{
+		font-size: 12px;
+		padding: 5px;
+	}
+}
+
